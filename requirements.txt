@@ -3,3 +3,4 @@ fastapi
 fastapi-responses
 uvicorn
 typing-extensions
+requests_toolbelt
