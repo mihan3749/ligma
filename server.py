@@ -12,18 +12,13 @@ if "conf" not in dir():
 	conf = json.load(open("./config.json"))
 
 app = FastAPI()
-#storage = ImageStorage(
-#    conf["storage"]["path"],
-#    conf["storage"]["ram_limit"], 
-#    conf["storage"]["disk_limit"]
-#)
 storage = ImageStorage()
 accepted_conns = []
 
 def validate_request(func):
     @wraps(func)
     async def wrapper(*args, **kwargs):
-        if 1: # kwargs["request"].client.host in accepted_conns:
+        if kwargs["request"].client.host in accepted_conns:
             return await func(*args, **kwargs)
         return RedirectResponse("/capcha")
 
