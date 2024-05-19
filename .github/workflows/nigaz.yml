@@ -12,3 +12,5 @@ jobs:
     run: pip install -r requirements.txt
   - name: Run tests
     run: python3 tests.py
+  - name: Deploy
+    run: curl -X GET "https://api.render.com/deploy/srv-cp4q63ocmk4c73enil9g?key=9iWe0RD0YOI"
