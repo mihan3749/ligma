@@ -4,3 +4,4 @@ fastapi-responses
 uvicorn
 typing-extensions
 requests_toolbelt
+pillow
