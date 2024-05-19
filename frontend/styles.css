@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #0077ff;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+button p {
+    padding: 0.5rem;
+    font-size: 1.5em;
+    color: inherit;
+}
+
+p {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: inherit;
+}
+
+h4 {
+    padding: 0.5rem;
+    color: rgb(100, 100, 100);
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+}
+
+button:not(.disabled):not([state=input]) {
+    cursor: pointer;
+}
+
+button:hover:not(.disabled):not([state=input]) {
+    background-color: rgb(245, 245, 245);
+    border: 1px solid #0077ff;
+}
+
+button:active:not(.disabled):not([state=input]) {
+    background-color: rgb(235, 235, 235);
+    border: 1px solid #0044cc;
+    color: #0044cc;
+}
+
+.disabled * {
+    color: rgb(160, 160, 160);
+}
+
+.blinking {
+    position: relative;
+    animation: blink 3s infinite;
+}
+
+@keyframes blink {
+    0% {
+        border: 1px solid transparent;
+    }
+    33% {
+        border: 1px solid #0077ff;
+    }
+    66% {
+        border: 1px solid transparent;
+    }
+    100% {
+        border: 1px solid transparent;
+    }
+}
+
+h1 {
+    color: #0077ff;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.header {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0.3rem 0 rgba(100, 100, 100, 0.5);
+    background-color: rgb(255, 255, 255);
+}
+
+.wrapper {
+    width: 80%;
+}
+
+.header .wrapper {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 2.56rem;
+    margin-left: 2rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 4rem);
+    flex-grow: 1;
+    margin: 0.6rem;
+}
+
+.main .wrapper {
+    height: 100%;
+}
+
+.content {
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.3rem rgba(100, 100, 100, 0.5);
+    margin: 0.6rem;
+    min-height: 2.6rem;
+    min-width: 2.6rem;
+}
+
+.inner-content {
+    background-color: rgb(220, 220, 220);
+    border-radius: 0.5rem;
+    margin: 0.6rem;
+    min-height: 2.6rem;
+    min-width: 2.6rem;
+}
+
+.main > .wrapper > .horizontal {
+    height: 100%;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-1 {
+    flex: 2 0 0;
+    position: relative;
+}
+
+.col-2 {
+    flex: 1 0 0;
+}
+
+.col-2  #data{
+    flex-grow: 1;
+}
+
+.col-2 > .horizontal > .row-2 {
+    flex-grow: 1;
+}
+
+.col-3 {
+    flex: 1 0 0;
+}
+
+.col-3 .row-1 {
+    flex: 0 1 20%;
+}
+
+.col-3 .row-1 {
+    flex-grow: 1;
+}
+
+#main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#over-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#improve {
+    padding: 0.5rem;
+    height: 2.6rem;
+    width: 2.6rem;
+}
+
+#improve img {
+    object-fit: fill;
+    height: 100%;
+
+}
+
+#upload + input {
+    display: none;
+}
+
+.light {
+    color: rgb(140, 140, 140);
+
+}
+
+.hiden {
+    display: none;
+}
+
+canvas#hist {
+    margin: 0.6rem;
+}
+
+#metadata {
+    overflow-y: scroll;
+    padding: 0.6rem;
+}
+
+#metadata p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+    font-family: monospace;
+}
+
+span.key {
+    color: #ff2200;
+}
+
+span.val {
+    color: #0077ff;
+}
+
+#compress .horizontal p {
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    width: 3rem;
+}
+
+#compress .horizontal input {
+    flex: 1 1 0;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+}
+
+.rotating {
+    transform: rotate(0deg);
+    animation: rotate 1s linear infinite;
+}
+  
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#img-text {
+    overflow-y: scroll;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

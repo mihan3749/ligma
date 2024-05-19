@@ -1,0 +1,56 @@
+{
+    "api": {
+        "ik_public_key": "public_MGTYHdpU3Px8HJr9tCb37oWFAAc=",
+        "ik_privat_key": "private_ouIibYIm2blK0pBRtzdUs5zSxao=",
+        "ik_metadata_endpoint_template": "https://api.imagekit.io/v1/files/{}/metadata",
+        "ik_upload_endpoint": "https://upload.imagekit.io/api/v1/files/upload",
+        "ik_delete_endpoint_template": "https://api.imagekit.io/v1/files/{}"
+    },
+    "auth": {
+        "mcs_refresh_token": "21jf75U6QpGc6WBJyognRN27hs5UaQUoaoyuTfV2CFARHyB97Z",
+        "mcs_access_token": "RY3jDMy2iACyyoEWGsNN6BJ8bKg9Fg3AW4HZMCaHVGxJAPche",
+        "mcs_oauth_client_id": "mcs6687523218.ml.vision.2V845p6epN5t3NQnhiuhi",
+        "mcs_oauth_secret_key": "2mE7aVQJddGmdxUwQP5iKUK5CttzzkHVupmKGe3sswELaQW7bhoBP3JewUXAhH",
+        "mcs_provider_name": "mcs",
+        "yc_client_key": "ysc1_NwgbFn5Rn5s3kS9NIyTTZ9lerCl0FcpJFM13ziYM5381c021",
+        "yc_server_key": "ysc2_NwgbFn5Rn5s3kS9NIyTT41YRWbZeH6PvlmJXMwgz0cc1e9f1"
+    },
+    "eps": {
+        "mcs_oauth": "https://mcs.mail.ru/auth/oauth/v1/token",
+        "mcs_photo_improve": "https://smarty.mail.ru/api/v1/photo/improve",
+        "mcs_recognize_text": "https://smarty.mail.ru/api/v1/text/recognize",
+        "mcs_recognize_scene_text": "https://smarty.mail.ru/api/v1/scene_text/recognize",
+        "mcs_recognize_objects": "https://smarty.mail.ru/api/v1/objects/detect",
+        "yc_validate_capcha": "https://smartcaptcha.yandexcloud.net/validate"
+    },
+    "dir": {
+        "path": "./",
+        "frontend": {
+            "path": "frontend/",
+            "main_page_file": "main.html",
+            "capcha_page_file": "capcha.html",
+            "styles_file": "styles.css",
+            "script_file": "script.js",
+            "config": "config.json"
+        },
+        "media": {
+            "path": "frontend/media/",
+            "logo": "logo.png",
+            "image_icon": "image_icon.svg",
+            "magic_stick_icon": "magic_stick.svg",
+            "magic_stick_icon_dis": "magic_stick_disabled.svg",
+            "tick_icon": "tick.svg",
+            "loading_icon": "loading_icon.svg"
+        },
+        "bin": {
+            "path": "",
+            "img_lib": "img_proc.so"
+        }
+    },
+    "storage": {
+        "path": "storage/",
+        "ram_limit": 268435456,
+        "disk_limit": 1073741824
+    },
+    "debug": true
+}

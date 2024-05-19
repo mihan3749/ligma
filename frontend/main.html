@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ГОООЛ | Работа с изображениями</title>
+	<link rel="icon" href="/media/logo.png" type="image/png">
+	<link rel="stylesheet" href="/frontend/styles.css">
+	<script type="text/javascript" src="/frontend/script.js" defer></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+	<script src="https://smartcaptcha.yandexcloud.net/captcha.js" defer></script>
+</head>
+<body>
+	<div class="header">
+        <div class="wrapper">
+			<div class="horizontal">
+				<img id="logo" src="/media/logo.png">
+				<h1>ГОООЛ</h1>
+			</div>
+        </div>
+    </div>
+	<div class="main">
+		<div class="wrapper">
+			<div class="horizontal">
+				<div class="content col-1">
+					<img id="main-img" src="/media/image_icon.svg">
+					<canvas id="over-main"></canvas>
+				</div>
+				<div class="vertical col-2">
+					<div class="content" id="data">
+						<h4>Данные</h4>
+						<div class="vertical hiden">
+							<div>
+								<p class="row-1">
+									<span class="light">Ширина: </span><span></span>
+								</p>
+								<p class="row-2">
+									<span class="light">Высота: </span><span></span>
+								</p>
+								<p class="row-3">
+									<span class="light">Размер: </span><span></span>
+								</p>
+								<div class="inner-content">
+									<canvas id="hist"></canvas>
+								</div>
+							</div>
+							<div class="inner-content" id="metadata">
+								<p></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="horizontal">
+						<div class="content row-1 button">
+							<button id="improve" class="disabled">
+								<img src="/media/magic_stick_disabled.svg">
+							</button>
+						</div>
+						<div class="content row-2 button">
+							<button id="compress" class="disabled" state="text">
+								<p>Сжать</p>
+								<div class="hiden horizontal">
+									<p>100%</p>
+									<input type="range" min="0" max="100" value="100">
+								</div>
+							</button>
+						</div>
+					</div>
+					<div class="content button">
+						<button id="upload" class="blinking"><p>Выбрать файл</p></button>
+						<input type="file">
+					</div>
+					<div class="content button">
+						<button id="download" class="disabled"><p>Скачать</p></button>
+					</div>
+				</div>
+				<div class="vertical col-3">
+					<div class="content row-1">
+						<h4>Текст</h4>
+						<p id="img-text" class="hiden"></p>
+					</div>
+					<div class="content row-2 hiden">
+						<button id="translate" class="disabled"><p>Перевести</p></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="overlay hiden">
+		<div class="overlay-wrapper">
+			<div
+				id="captcha-container"
+				class="smart-captcha"
+				data-sitekey="ysc1_NwgbFn5Rn5s3kS9NIyTTZ9lerCl0FcpJFM13ziYM5381c021"
+				data-hl="ru"
+				data-callback="capcha_callback"
+			></div>
+		</div>
+	</div>
+</body>
+</html>

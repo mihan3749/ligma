@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ГОООЛ | Капча</title>
+	<link rel="icon" href="/media/logo.png" type="image/png">
+	<script src="https://smartcaptcha.yandexcloud.net/captcha.js" defer></script>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		.wrapper {
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+	<script>
+		async function get_capcha_status(token) {
+			let args = new URLSearchParams({token: token}).toString();
+			let url = `/validate/capcha?${args}`;
+			let resp = await fetch(url);
+			return await resp.json();
+		}
+
+		async function capcha_callback(token) {
+			let resp = await get_capcha_status(token);
+			if (resp.status == true)
+				window.location.href = "https://echpochmak3000.onrender.com/";
+		}
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div
+			id="captcha-container"
+			class="smart-captcha"
+			data-sitekey="ysc1_NwgbFn5Rn5s3kS9NIyTTZ9lerCl0FcpJFM13ziYM5381c021"
+			data-hl="ru"
+			data-callback="capcha_callback"
+		></div>
+	</div>
+</body>
+</html>

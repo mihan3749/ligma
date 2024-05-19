@@ -1,0 +1,42 @@
+{
+	"color_hist": {
+		"width": 256,
+		"height": 100
+	},
+	"lim": {
+		"max_file_size": 20971520,
+		"max_img_resolution": 20000000,
+		"supported_formats": ["jpeg", "png"]
+	},
+	"err": {
+		"not_img": "Этот файл - не изображение",
+		"unsupported_format": "Данный формат не поддерживается, выберите PNG или JPG",
+		"big_file": "Файл слишком большой, лимит - 20 МБ",
+		"big_image": "Изображение слишком крупное, лимит - 20 мегапикселей (длина × ширина)",
+		"invalid_qualiry": "Карявое значение качества изображение"
+	},
+	"msg": {
+		"no_exif": "Нет метаданных",
+		"no_text": "Вероятно, нет текста",
+		"objs_found_n": "Объектов найдено: "
+	},
+	"eps": {
+		"validate_capcha": "/validate/capcha",
+		"post_img": "/service/upload",
+		"del_img": "/service/delete",
+		"get_data": "/service/data",
+		"get_color_distr": "/service/color_distr",
+		"get_metadata": "/service/metadata",
+		"compress": "/service/compress",
+		"improve": "/service/improve",
+		"text": "/service/text",
+		"objs": "/service/objects"
+	},
+	"media": {
+		"tick_icon": "/media/tick.svg",
+		"magic_stick_icon": "/media/magic_stick.svg",
+		"magic_stick_icon_dis": "/media/magic_stick_disabled.svg",
+		"loading_icon": "/media/loading_icon.svg"
+	},
+	"debug": true
+}
