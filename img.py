@@ -121,19 +121,3 @@ class ImageStorage:
 			return True
 		except:
 			return False
-
-
-def test():
-	storage = ImageStorage()
-	#img1 = MyImage(open("/home/ya/big.jpg", "rb").read(), "jpeg")
-	#storage.add(img1);
-	img2 = MyImage(open("/home/ya/test.jpg", "rb").read(), "jpeg")
-	storage.add(img2);
-	img3 = MyImage(open("/home/ya/a/a.png", "rb").read(), "png")
-	storage.add(img3);
-	print(img3.basedata())
-	print(img3.color_histogram())
-	print(img3.metadata())
-
-if __name__ == "__main__":
-	test()

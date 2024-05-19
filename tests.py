@@ -1,5 +1,4 @@
 def main():
-	print("pohui goooool")
-	return 0
+	assert 1 + 1 == 2, "Math error"
 
 main()
