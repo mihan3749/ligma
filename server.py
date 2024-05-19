@@ -168,6 +168,6 @@ async def check_captcha(token: str, request: Request):
 
 if __name__ == "__main__":
     try:
-        uvicorn.run("server:app", reload=True)
+        uvicorn.run("server:app", reload=True, host="0.0.0.0", port=10000)
     except:
         del storage
