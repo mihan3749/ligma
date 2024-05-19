@@ -1,0 +1,5 @@
+requests
+fastapi
+fastapi-responses
+uvicorn
+typing-extensions
