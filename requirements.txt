@@ -5,3 +5,4 @@ uvicorn
 typing-extensions
 requests_toolbelt
 pillow
+numpy
