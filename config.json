@@ -1,12 +1,12 @@
 {
     "auth": {
-        "mcs_refresh_token": "",
-        "mcs_access_token": "",
-        "mcs_oauth_client_id": "",
-        "mcs_oauth_secret_key": "",
+        "mcs_refresh_token": "21jf75U6QpGc6WBJyognRN27hs5UaQUoaoyuTfV2CFARHyB97Z",
+        "mcs_access_token": "RY3jDMy2iACyyoEWGsNN6BJ8bKg9Fg3AW4HZMCaHVGxJAPche",
+        "mcs_oauth_client_id": "mcs6687523218.ml.vision.2V845p6epN5t3NQnhiuhi",
+        "mcs_oauth_secret_key": "2mE7aVQJddGmdxUwQP5iKUK5CttzzkHVupmKGe3sswELaQW7bhoBP3JewUXAhH",
         "mcs_provider_name": "mcs",
-        "yc_client_key": "",
-        "yc_server_key": ""
+        "yc_client_key": "ysc1_NwgbFn5Rn5s3kS9NIyTTZ9lerCl0FcpJFM13ziYM5381c021",
+        "yc_server_key": "ysc2_NwgbFn5Rn5s3kS9NIyTT41YRWbZeH6PvlmJXMwgz0cc1e9f1"
     },
     "eps": {
         "mcs_oauth": "https://mcs.mail.ru/auth/oauth/v1/token",
